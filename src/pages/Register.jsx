@@ -238,32 +238,6 @@ const Register = () => {
               />
             </div>
             <div className="mb-6">
-              <div className="relative">
-                <select
-                  id="type"
-                  value={type}
-                  onChange={(e) => setType(e.target.value)}
-                  className="block text-base bordder-[#E9EDF4] border appearance-none w-full py-3 px-5   bg-[#FCFDFE] rounded-3xl  border-slate-300 focus:outline-none focus:ring"
-                >
-                  <option value="traveler">Traveler</option>
-                  <option value="hotelOwner">Hotel Owner</option>
-                  <option value="vehicleOwner">Vehicle Owner</option>
-                  <option value="resturentOwner">Resturent Owner</option>
-                  <option value="tourGuide">Tour Guide</option>
-                  <option value="eventOrganizer">Event Organizer</option>
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                  <svg
-                    className="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M14.354 7.354a2 2 0 00-2.828 0L10 8.172 7.475 5.646a2 2 0 10-2.828 2.828l3.182 3.182a2 2 0 002.828 0l3.182-3.182a2 2 0 000-2.828z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div className="mb-6">
               <input
                 placeholder="Password"
                 type="password"
