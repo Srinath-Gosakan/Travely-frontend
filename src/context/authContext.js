@@ -1,8 +1,20 @@
 import axios from "axios";
 import { createContext, useEffect, useReducer } from "react";
 
+const storedData = localStorage.getItem("user");
+
+let user = null;
+try {
+  if (storedData) {
+    user = JSON.parse(storedData);
+  }
+} catch (err) {
+  console.error("Invalid JSON:", err);
+}
+
+
 const INITIAL_STATE = {
-  user: JSON.parse(localStorage.getItem("user")) || null,
+  user: user,
   loading: false,
   error: null,
 };
